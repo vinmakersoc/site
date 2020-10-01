@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+.hero {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    /* Scaling */
+    width: 1441px;
+    height: 900px;
+    /* Choose image */
+    background: url("assets/hero.png");
+    background-size: cover;
+    position: fixed;
+
+}
+
+.hero-2{
+    /* Scaling */
+    width: 100%;
+    height: 896px;
+    left: -109px;
+    top: -23px;
+    /* Choose image */
+    background: url("assets/hero-2.png");
+    background-size: cover;
+    position: fixed;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.Join-button {
+    position: relative;
+    display: block;
+    width: 103px;
+    height: 49px;
+
+    font-family: "Varela Round";
+    font-size: 18px;
+    color: white;
+
+    background-color: #E94560;
+    border-radius: 3px;
+    border: none;
+}
+
+h1 {
+    color: white;
+    font-family: "Varela Round";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 75px;
+    line-height: 75px;
+
+    width: 750px;
+    height: 167px;
+    position: relative;
+
+    padding-top: 100px;
+    padding-left: 150px;
+}
+
+p {
+    color: white;
+    font-family: "Varela Round";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    width: 684px;
+    height: 111px;
+    position: relative;
+
+    padding-left: 150px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    font-family: "Varela Round";
+    font-size: 18px;
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.buttons {
+    position: relative;
+    padding-left: 150px;
+    padding-top: 50px;
+    display: inline-block;
+    justify-content: space-around;
+}
+
+.Join-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0px 15px #E94560;  
+}
+
+.Upcoming-events {
+    position: relative;
+    width: 185px;
+    height: 86px;
+    border-radius: 6px;
+
+    font-family: "Varela Round";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F5F9FC;
+
+    background-color: #E94560;
+    border: none;
+}
+
+.Upcoming-events:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0px 25px #E94560;
+}
+
+.Explore-projects {
+    position: relative;
+    width: 185px;
+    height: 86px;
+
+    border-radius: 6px;
+
+    font-family: "Varela Round";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F5F9FC;
+
+    background: none;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #f5f9fc;
+    border-width: 2px;
+
+    margin-left: 50px;
+}
+
+.Explore-projects:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0px 25px rgba(255, 255, 255, .4);
+}
