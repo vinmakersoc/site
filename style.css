@@ -5,19 +5,16 @@
 
 html, body {margin: 0; height: 100%; overflow: hidden}
 
-.hero {
-    /* Set rules to fill background */
-    min-height: 100%;
-    min-width: 1024px;
-    /* Scaling */
-    width: 1441px;
-    height: 900px;
-    /* Choose image */
-    background: url("assets/hero.png");
-    background-size: cover;
-    position: fixed;
-
+body {
+    background-color: white;
 }
+
+@media only screen and (min-width: 450px) {
+    body {
+        background-image: url('assets/hero.png');
+    }
+}
+
 
 .hero-2{
     /* Scaling */
