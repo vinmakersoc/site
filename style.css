@@ -1,9 +1,7 @@
 * {
-    margin: 10px;
+    margin: 0px;
     padding: 0;
 }
-
-
 
 html, body {margin: 0; height: 100%; overflow: hidden}
 
@@ -21,11 +19,40 @@ body {
 }
 
 nav {
+    margin: 5px 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: relative;
 }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+nav ul li {
+    float: left;
+}
+  
+nav ul li a {
+    display: block;
+    color: white;
+    font-family: "Varela Round";
+    font-size: 18px;
+    text-align: center;
+    padding: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #E94560;
+    transition: 0.3s;
+}
+
 
 .Join-button {
     position: relative;
@@ -72,26 +99,7 @@ p {
     padding-left: 150px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-li {
-    float: left;
-}
-  
-li a {
-    display: block;
-    color: white;
-    font-family: "Varela Round";
-    font-size: 18px;
-    text-align: center;
-    padding: 50px;
-    text-decoration: none;
-}
+
 
 button:focus {
     outline: none;
@@ -160,10 +168,19 @@ button:focus {
     box-shadow: 0 0px 25px rgba(255, 255, 255, .4);
 }
 
-iframe {
-    width: 640px;
-    height: 637px;
+
+.join-form iframe {
+    margin: 5px auto;
+    width: 100%;
+    height: 600px;
     border: none;
-    position: fixed;
+}
+
+.join-form iframe:focus {
+    outline: none;
     overflow: hidden;
 }
+
+.join-form iframe[seamless] {
+    display: block;
+  }
