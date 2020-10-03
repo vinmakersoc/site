@@ -1,7 +1,9 @@
 * {
-    margin: 0;
+    margin: 10px;
     padding: 0;
 }
+
+
 
 html, body {margin: 0; height: 100%; overflow: hidden}
 
@@ -156,4 +158,12 @@ button:focus {
 .Explore-projects:hover {
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 0px 25px rgba(255, 255, 255, .4);
+}
+
+iframe {
+    width: 640px;
+    height: 637px;
+    border: none;
+    position: fixed;
+    overflow: hidden;
 }
