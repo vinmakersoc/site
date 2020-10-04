@@ -14,6 +14,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>VinMaker Soc</title>
 </head>
 <body>
@@ -23,12 +24,17 @@
             <a class="logo" href="https://vinmakersoc.github.io/site/">
                 <img src="assets/logo.png" alt="logo" width="228" height="98">
             </a>
-            <ul>
+
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <ul class="nav-ul" id="nav-ul">
                 <li><a href="#">Events</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <button class="Join-button" onclick="window.location.href='pages/join_us.html';">Join us</button>
+            <button class="Join-button" id="Join-button" onclick="window.location.href='pages/join_us.html';">Join us</button>
         </nav>
     </header>
     <div class="Intro">
@@ -38,7 +44,10 @@
     <div class="buttons">
         <button class="Upcoming-events" onclick="window.location.href='#';">Upcoming Events</button>
         <button class="Explore-projects" onclick="window.location.href='#';">Explore Projects</button>
+        <button class="Join-button-2" id="Join-button-2" onclick="window.location.href='pages/join_us.html';">Join us</button>
     </div>
+
+    <script src="script.js"></script>
     <footer></footer>
 </body>
 </html>

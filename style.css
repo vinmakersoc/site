@@ -9,6 +9,7 @@ body {
     background-color: rgb(15, 15, 15);
 }
 
+/* Large devices (laptops/desktops, 992px and up)*/
 @media only screen and (min-width: 992px) {
     body {
         overflow: hidden;
@@ -17,10 +18,14 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .hamburger {
+        display: none;
+    }
 }
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     position: relative;
@@ -30,6 +35,7 @@ nav ul {
     list-style-type: none;
     margin: 10px 10px;
     overflow: hidden;
+    text-align: center;
 }
   
 nav ul li {
@@ -51,7 +57,6 @@ nav ul li a:hover {
     color: #E94560;
     transition: 0.3s;
 }
-
 
 h1 {
     display: block;
@@ -86,8 +91,6 @@ p {
     margin: 10px 150px;
 }
 
-
-
 button:focus {
     outline: none;
 }
@@ -116,7 +119,7 @@ button:focus {
     background-color: #E94560;
     border-radius: 3px;
     border: none;
-
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -124,6 +127,10 @@ button:focus {
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 0px 15px #E94560;
     transition: 0.3s;  
+}
+
+.Join-button-2 {
+    display: none;
 }
 
 .Upcoming-events {
@@ -141,7 +148,7 @@ button:focus {
 
     background-color: #E94560;
     border: none;
-
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -170,7 +177,7 @@ button:focus {
     border-style: solid;
     border-color: #f5f9fc;
     border-width: 2px;
-
+    cursor: pointer;
     margin-left: 50px;
     transition: 0.3s;
 }
@@ -197,15 +204,77 @@ button:focus {
 .join-form iframe[seamless] {
     display: block;
   }
+.hamburger {
+    background-color: transparent;
+    color: #E94560;
+    border: 0;
+    font-size: 36px;
+    cursor: pointer;
+}
 
+.hamburger:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 992px) {
+    nav {
+        margin: 10px 10px;
+    }
+    .Join-button {
+        display: none;
+    }
+    .nav-ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        color: white;
+    }
+
+    .nav-ul.show {
+        display: flex;
+        background-color:  #E94560;
+        backdrop-filter: blur(5px);
+        border-radius: 5px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .Join-button-2 {
+        margin-top: 50px;
+        margin-bottom: 25px;
+
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 86px;
+        border-radius: 6px;
+    
+        font-family: "Varela Round";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #F5F9FC;
+    
+        background-color: #E94560;
+        border: none;
+    
+        transition: 0.3s;
+    }
+}
 
 /* Extra small devices (phones, 600px and down)*/ 
 @media only screen and (max-width: 600px) {
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+    
     h1{
         font-size: 32px;
         width: 100%;
         height: 100%;
-        margin: 10px auto;
+        margin: 20px auto;
         display: block;
         text-align: center;
     }
@@ -268,6 +337,14 @@ button:focus {
     
         transition: 0.3s;
     }
+
+    .join-form iframe {
+        display: inline-block;
+        margin: 5px 30px;
+        width: 100%;
+        height: 1450px;
+        border: none;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) 
@@ -275,9 +352,6 @@ button:focus {
 
 /* Medium devices (landscape tablets, 768px and up)
 @media only screen and (min-width: 768px) {...}*/
-
-/* Large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) {...}*/
 
 /* Extra large devices (large laptops and desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {...}*/
