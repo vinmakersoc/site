@@ -3,25 +3,43 @@
     padding: 0;
 }
 
-html, body {margin: 0; height: 100%}
+html, body {margin: 0; height: 100%; }
 
 body {
-    background-color: rgb(15, 15, 15);
+    background-color: #2b2b2b;
 }
+
+#yellow{
+    width: 30%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#orange {
+    width: 50%;
+    top: 20%;
+    left: 25%;
+    position: fixed;
+
+}
+
+#blue{
+    width: 50%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
 
 /* Large devices (laptops/desktops, 992px and up)*/
 @media only screen and (min-width: 992px) {
-    body {
-        overflow: hidden;
-        background-color: rgb(15, 15, 15) ;
-        background-image: url('assets/hero.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     .hamburger {
         display: none;
     }
 }
+
+
 
 nav {
     display: flex;
@@ -45,7 +63,7 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     color: white;
-    font-family: "Varela Round";
+    font-family: "Lato";
     font-size: 18px;
     text-align: center;
     padding: 50px;
@@ -61,7 +79,7 @@ nav ul li a:hover {
 h1 {
     display: block;
     color: white;
-    font-family: "Varela Round";
+    font-family: "Lato";
     font-style: normal;
     font-weight: bold;
     font-size: 75px;
@@ -79,7 +97,7 @@ h1 {
 p {
     display: block;
     color: white;
-    font-family: "Varela Round";
+    font-family: "Lato";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -112,7 +130,7 @@ button:focus {
     width: 103px;
     height: 49px;
 
-    font-family: "Varela Round";
+    font-family: "Lato";
     font-size: 18px;
     color: white;
 
@@ -139,7 +157,7 @@ button:focus {
     height: 86px;
     border-radius: 6px;
 
-    font-family: "Varela Round";
+    font-family: "Lato";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -165,7 +183,7 @@ button:focus {
 
     border-radius: 6px;
 
-    font-family: "Varela Round";
+    font-family: "Lato";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -192,7 +210,7 @@ button:focus {
 .join-form iframe {
     margin: 5px auto;
     width: 100%;
-    height: 600px;
+    height: 1420px;
     border: none;
 }
 
@@ -217,19 +235,23 @@ button:focus {
     outline: none;
 }
 
-@media only screen and (max-height: 800px){
-    body {
-        overflow: visible;
-    }
-    .join-form iframe {
-        display: inline-block;
-        margin: 5px auto;
-        width: 100%;
-        height: 420px;
-        border: none;
-    }
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;  
+    display: flex;
+;}
+
+footer p {
+    font-family: "Varela Round";
+    font-size: 14px;
 }
 
+
+
+
+/*Small Device - change nav bar to hamburger*/
 @media only screen and (max-width: 992px) {
     nav {
         margin: 10px 10px;
@@ -254,6 +276,7 @@ button:focus {
     .hamburger {
         display: block;
     }
+    
     .Join-button-2 {
         margin-top: 50px;
         margin-bottom: 25px;
@@ -285,7 +308,7 @@ button:focus {
         width: 150px;
         height: auto;
     }
-    
+
     h1{
         font-size: 32px;
         width: 100%;
@@ -358,7 +381,7 @@ button:focus {
         display: inline-block;
         margin: 5px auto;
         width: 100%;
-        height: 1450px;
+        height: 1600px;
         border: none;
     }
 }
