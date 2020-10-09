@@ -206,6 +206,21 @@ button:focus {
     transition: 0.3s;
 }
 
+.contact-form iframe {
+    margin: 5px auto;
+    width: 100%;
+    height: 970px;
+    border: none;
+}
+
+.contact-form iframe:focus {
+    outline: none;
+    overflow: hidden;
+}
+
+.contact-form iframe[seamless] {
+    display: block;
+}
 
 .join-form iframe {
     margin: 5px auto;
@@ -264,6 +279,17 @@ footer p {
     height: 300px;
 }
 
+.title_contact h1{
+    background: #E94560;
+    box-shadow: 0 0px 15px #E94560;
+    position: relative;
+    text-align: center;
+    line-height: 300px;
+    margin: 50px auto;
+    width: 100%;
+    height: 300px;
+}
+
 h2 {
     font-family: "Varela Round";
     font-size: 20px;
@@ -275,17 +301,32 @@ h2 {
     text-align: center;
     margin: 20px auto;
 }
+.intro1 {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.person_1 img:hover {
+    color: rgba(255, 255, 255, 1);
+    filter: none;
+    transition: 0.3s;
+}
+
 .person_1 img {
     width: 50%;
     border-radius: 50%;
     filter: grayscale(100%);
     transition: 0.3s;  
 }
-.person_1 img:hover {
-    color: rgba(255, 255, 255, 1);
-    filter: none;
-    transition: 0.3s;  
+
+
+.person_1 img:hover .intro1{
+    visibility: visible;
 }
+
 .person_1 p {
     display: block;
     position: relative;
