@@ -316,7 +316,7 @@ h2 {
 }
 
 .person_1 img {
-    width: 50%;
+    width: 20%;
     border-radius: 50%;
     filter: grayscale(100%);
     transition: 0.3s;  
@@ -359,7 +359,9 @@ h2 {
     font-size: 16px;
 }
 
-
+.Execs p:hover {
+    color: #E94560;
+}
 /*Small Device - change nav bar to hamburger*/
 @media only screen and (max-width: 992px) {
     nav {
