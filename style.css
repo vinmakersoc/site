@@ -507,7 +507,26 @@ h2 {
         border: none;
     }
 }
+.cards {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card {
+    justify-content: left;
+    display: inline-block;                                                                                                             
+    max-width: 300px;
+    margin: 50px 150px;
+    text-align: center;
+}
 
+.card h2 {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+  
 /* Small devices (portrait tablets and large phones, 600px and up) 
 @media only screen and (min-width: 600px) {...}*/
 
