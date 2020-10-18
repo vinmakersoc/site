@@ -90,6 +90,28 @@ body {
     right: 0;
     bottom: 0;
 }
+.join {
+    margin-bottom: 20px;
+}
+.join h1{
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+    animation-name: blinking-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes blinking-animation {
+    0% {color: white;}
+    100% {color: #e94560; }
+}
+
+#join_picture {
+    width: 50%;
+    display: block;
+    margin: 0px auto;
+    float: center;
+}
 
 
 /* Large devices (laptops/desktops, 992px and up)*/
