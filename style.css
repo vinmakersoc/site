@@ -436,6 +436,58 @@ h2 {
 }
 /*Small Device - change nav bar to hamburger*/
 @media only screen and (max-width: 992px) {
+    .hero_pictures {
+        display: block;
+        position: relative;
+    }
+    #pic1 {
+        width: 30%;
+        margin-top: 250px;
+        right: 10px;
+        position: fixed;
+        float: right;
+        transform: rotate(10deg);
+        animation: pic1animation;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    
+    #pic2 {
+        width: 25%;
+        margin-top: 50px;
+        right: 30px;
+        position: fixed;
+        float: right;
+        transform: rotate(20deg);
+        animation: pic2animation;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    
+    #pic3 {
+        width: 25%;
+        margin-top: 450px;
+        right: 50px;
+        position: fixed;
+        float: right;
+        transform: rotate(-20deg);
+        animation: pic3animation;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes pic1animation {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(10deg);}
+    }
+    @keyframes pic2animation {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(20deg);}
+    }
+    @keyframes pic3animation {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(-20deg);right:50px;}
+    }
     nav {
         margin: 10px 10px;
     }
