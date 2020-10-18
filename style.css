@@ -9,6 +9,69 @@ body {
     background-color: #2b2b2b;
 }
 
+#pic1 {
+    filter: grayscale(100%);
+    border: 5px solid #555;
+    width: 30%;
+    margin-top: 100px;
+    right: 150px;
+    position: fixed;
+    float: right;
+    transform: rotate(10deg);
+    animation: pic1animation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+#pic2 {
+    filter: grayscale(100%);
+    border: 5px solid #555;
+    width: 25%;
+    margin-top: 100px;
+    right: 20px;
+    position: fixed;
+    float: right;
+    transform: rotate(20deg);
+    animation: pic2animation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+#pic3 {
+    filter: grayscale(100%);
+    border: 5px solid #555;
+    width: 25%;
+    margin-top: 100px;
+    right: 250px;
+    position: fixed;
+    float: right;
+    transform: rotate(-20deg);
+    animation: pic3animation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes pic1animation {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(10deg);}
+}
+@keyframes pic2animation {
+    0% {transform: rotate(0deg); right: 150px;}
+    100% {transform: rotate(20deg);right: 20px;}
+}
+@keyframes pic3animation {
+    0% {transform: rotate(0deg); right:150px;}
+    100% {transform: rotate(-20deg);right:250px;}
+}
 #yellow{
     width: 30%;
     position: fixed;
@@ -37,6 +100,7 @@ body {
     .hamburger {
         display: none;
     }
+
 }
 
 
@@ -425,7 +489,58 @@ h2 {
 
 /* Extra small devices (phones, 600px and down)*/ 
 @media only screen and (max-width: 600px) {
+    .hero_pictures {
+        display: block;
+        position: relative;
+    }
+    #pic1 {
+        width: 30%;
+        margin-top: 100px;
+        right: 150px;
+        position: absolute;
+        float: right;
+        transform: rotate(10deg);
+        animation: pic1animation;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
     
+    #pic2 {
+        width: 25%;
+        margin-top: 100px;
+        right: 50px;
+        position: absolute;
+        float: right;
+        transform: rotate(20deg);
+        animation: pic2animation;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    
+    #pic3 {
+        width: 25%;
+        margin-top: 100px;
+        right: 250px;
+        position: absolute;
+        float: right;
+        transform: rotate(-20deg);
+        animation: pic3animation;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes pic1animation {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(10deg);}
+    }
+    @keyframes pic2animation {
+        0% {transform: rotate(0deg); right: 150px;}
+        100% {transform: rotate(20deg);right: 50px;}
+    }
+    @keyframes pic3animation {
+        0% {transform: rotate(0deg); right:150px;}
+        100% {transform: rotate(-20deg);right:250px;}
+    }
     .logo img {
         width: 150px;
         height: auto;
@@ -506,6 +621,7 @@ h2 {
         height: 1600px;
         border: none;
     }
+   
 }
 .cards {
     display: inline-flex;
