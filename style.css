@@ -97,13 +97,6 @@ body {
     margin: 20px auto;
     text-align: center;
     color: white;
-    animation-name: blinking-animation;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-@keyframes blinking-animation {
-    0% {color: white;}
-    100% {color: #e94560; }
 }
 
 #join_picture {
