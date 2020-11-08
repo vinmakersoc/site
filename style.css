@@ -657,7 +657,7 @@ h2 {
 .card {
     justify-content: left;
     display: inline-block;                                                                                                             
-    max-width: 300px;
+    max-width: 450px;
     margin: 50px 150px;
     text-align: center;
 }
