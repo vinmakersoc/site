@@ -658,6 +658,7 @@ h2 {
     justify-content: left;
     display: inline-block;                                                                                                             
     max-width: 600px;
+    min-width: 300px;
     margin: 50px 150px;
     text-align: center;
 }
