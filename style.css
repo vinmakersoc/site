@@ -337,10 +337,6 @@ footer p {
     font-size: 14px;
 }
 
-.people {
-    display: flex;
-    margin: 50px auto;
-}
 
 .title_about h1{
     background: #E94560;
@@ -381,7 +377,15 @@ h2 {
     color: white;
 }
 
-.person_1 {
+.people {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+
+.person {
     position: relative;
     text-align: center;
     margin: 20px auto;
@@ -394,25 +398,27 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
-.person_1 img:hover {
+.person img:hover {
     color: rgba(255, 255, 255, 1);
     filter: none;
     transition: 0.3s;
 }
 
-.person_1 img {
-    width: 20%;
+.person img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 50%;
     filter: grayscale(100%);
     transition: 0.3s;  
 }
 
 
-.person_1 img:hover .intro1{
+.person img:hover .intro1{
     visibility: visible;
 }
 
-.person_1 p {
+.person p {
     display: block;
     position: relative;
     margin: 0px auto;
@@ -420,29 +426,6 @@ h2 {
     font-size: 16px;
 }
 
-.person_2 {
-    position: relative;
-    text-align: center;
-    margin: 20px auto;
-}
-.person_2 img {
-    width: 50%;
-    border-radius: 50%;
-    filter: grayscale(100%);
-    transition: 0.3s;  
-}
-.person_2 img:hover {
-    color: rgba(255, 255, 255, 1);
-    filter: none;
-    transition: 0.3s;  
-}
-.person_2 p {
-    display: block;
-    position: relative;
-    margin: 0px auto;
-    font-family: "Varela Round";
-    font-size: 16px;
-}
 
 .Execs p:hover {
     color: #E94560;
