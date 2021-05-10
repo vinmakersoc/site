@@ -1,8 +1,8 @@
-# VinMaker Society Website
+# VinMaker Society Website (OUTDATED)
 Created by Nguyen Hoang Trung Dung
 
 ## About
-This is the main website for VinMaker Society at VinUniversity.
+This is the original website for VinMaker Society at VinUniversity.
 
 ## Contributing
 If you like to contribute, feel free to clone the project.
